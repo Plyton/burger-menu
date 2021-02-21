@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Burger shop</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2 class="header__title">burger shop</h2>
+        </header>
+        <main>
+            <section class="burger">
+                <h2 class="burger__title">Выберите бургер</h2>
+                <label>
+                    <input type="radio" name="burger" value="гамбургер">
+                    <div class="burger__wrp">
+                        <img src="img/burger1.png" alt="burger" width="50" height="50">
+                        <span class="burger__txt">Гамбургер</span>
+                        <span class="burger__desc cal" data-cal="320">320 калорий</span>
+                        <span class="burger__price price" data-price="120">120₱</span>
+                    </div>
+                </label>
+
+                <label>
+                    <input type="radio" name="burger" value="чизбургер">
+                    <div class="burger__wrp">
+                        <img src="img/burger2.png" alt="burger" width="50" height="50">
+                        <span class="burger__txt">Чизбургер</span>
+                        <span class="burger__desc cal" data-cal="440">440 калорий</span>
+                        <span class="burger__price price" data-price="140">140₱</span>
+                    </div>
+                </label>
+            </section>
+
+            <section class="nachika">
+                <h2 class="nachika__title">Выберите начинку</h2>
+                <label>
+                    <input type="radio" name="nachika" value="сыр">
+                    <div class="nachika__wrp">
+                        <img src="img/сыр.png" alt="сыр" width="50" height="50">
+                        <span class="nachika__txt">Сыр</span>
+                        <span class="nachika__desc cal" data-cal="290">290 калорий</span>
+                        <span class="nachika__price price" data-price="30">30₱</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="nachika" value="лук">
+                    <div class="nachika__wrp">
+                        <img src="img/лук.png" alt="лук" width="50" height="50">
+                        <span class="nachika__txt">Лук</span>
+                        <span class="nachika__desc cal" data-cal="50">50 калорий</span>
+                        <span class="nachika__price price" data-price="10">10₱</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="nachika" value="салат">
+                    <div class="nachika__wrp">
+                        <img src="img/salat.png" alt="salat" width="50" height="50">
+                        <span class="nachika__txt">Салат</span>
+                        <span class="nachika__desc cal" data-cal="20">20 калорий</span>
+                        <span class="nachika__price price" data-price="20">20₱</span>
+                    </div>
+                </label>
+            </section>
+
+
+            <section class="adds  adds--margin">
+                <h2 class="adds__title">Добавить</h2>
+                <label>
+                    <input type="checkbox" name="adds" value="соус" class="sauce">
+                    <div class="adds__wrp">
+                        <img src="img/соус.png" alt="соус" width="50" height="50">
+                        <span class="adds__txt">Соус</span>
+                        <span class="adds__desc cal" data-cal="350">350 калорий</span>
+                        <span class="adds__price price" data-price="25">25₱</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="checkbox" name="adds" value="специи" class="spice">
+                    <div class="nachika__wrp">
+                        <img src="img/специи.png" alt="специи" width="50" height="50" class="spice">
+                        <span class="adds__txt">Специи</span>
+                        <span class="adds__desc cal" data-cal="100">100 калорий</span>
+                        <span class="adds__price price" data-price="40">40₱</span>
+                    </div>
+                </label>
+            </section>
+        </main>
+        <footer>
+            <section class="order">
+                <h2 class="order__title">ваш заказ:</h2>
+                <span class="order__txt"></span>
+            </section>
+            <section class="total">
+                <h2 class="total__title">итого:</h2>
+                <span class="total__txt"></span>
+                <span class="total__price">
+                </span>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: blue;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+body {
+    background-image: url('img/fon.jpg');
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1280px;
+    margin: 20px auto 0 auto;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: orange;
+}
+
+.header__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: darkred;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.burger,
+.adds {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nachika {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.burger__title,
+.nachika__title,
+.adds__title,
+.order__title,
+.total__title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: brown;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.burger__wrp,
+.nachika__wrp,
+.adds__wrp {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+span {
+    margin: 2px 0 2px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.burger__txt,
+.nachika__txt,
+.adds__txt {
+    font-weight: 900;
+    border-bottom: 2px solid black;
+}
+
+label:hover {
+    background-color: rgb(253, 228, 194);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+input:checked+div {
+    transform: scale(1.2);
+}
+
+.adds--margin {
+    margin: 0 0 20px 0;
+}
+
+footer {
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: steelblue;
+}
+
+.order,
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.order__txt {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 2px solid black;
+}
